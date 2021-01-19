@@ -1,0 +1,94 @@
+
+.bgBox{
+	width: 100vw;
+	height: 100vh;
+	background-color: #eeeeed;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.confirmSet{
+	width: 290rpx;
+	height: 74rpx;
+	background-color: #b7cfb8;
+	color: #fff;
+	text-align: center;
+	line-height: 74rpx;
+	margin-top: 3vh;
+}
+.colorImgBox{
+	width: 42.5vw;
+	height: 40vh;
+	position: relative;
+}
+.colorBox,
+.clickCover,
+.notCover{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+.icongou{
+	font-size: 100rpx;
+	color: #fff;
+}
+.clickCover{
+	text-align: center;
+	line-height: 40vh;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+}
+.notCover{
+	background-color: rgba(255,255,255,0.6);
+	position: absolute;
+	z-index: 2;
+	top: 0;
+}
+.chooiceBox{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	width: 90vw;
+	margin-top: 2vh;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.bgTitle{
+
+	font-size: 40rpx;
+	letter-spacing: 5rpx;
+	margin: 5vh 0;
+}
+.haveChoice{
+	letter-spacing: 5rpx;
+	font-size: 35rpx;
+	margin-top: 15vh;
+}
+.colorItem{
+	text-align: center;
+	margin-top: 3vh;
+}
+.chooiceText,
+.colorItem{
+	font-size: 35rpx;
+	letter-spacing: 1px;
+}
+.chooiceText{
+	margin-top: 12vh;
+}
+.hotColor{
+	color: #f9d4bb;
+}
+.codeColor{
+	color: #add2fc;
+}
+

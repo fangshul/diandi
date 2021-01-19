@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/addDiandi/addDiandi",
+    "pages/detail/detail",
+    "pages/addressList/addressList",
+    "pages/guide/guide",
+    "pages/bgSet/bgSet",
+    "pages/feedback/feedback"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "点滴",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#fff",
+    "disableScroll": true,
+    "enablePullDownRefresh": false
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap0.json"
+}

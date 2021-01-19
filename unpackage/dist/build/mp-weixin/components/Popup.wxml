@@ -1,0 +1,1 @@
+<view class="popupBox"><view class="popup"><view><image class="popupIcon" src="../static/images/popupLeft.png"></image></view><view class="popupText">{{info}}</view><view><image class="popupIcon" src="../static/images/popupRight.png"></image></view></view></view>

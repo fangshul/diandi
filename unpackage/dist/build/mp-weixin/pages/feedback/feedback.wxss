@@ -1,0 +1,1 @@
+.feedbackText{text-align:center;font-size:40rpx;letter-spacing:5rpx;margin-top:5vh}.submit{background-color:#b7cfb8;width:300rpx;margin:0 auto;height:70rpx;color:#fff;line-height:70rpx;text-align:center}.feedbackBox{padding:30rpx;border:1px solid #b7cfb8;width:75vw;height:470rpx;margin:6vh auto}

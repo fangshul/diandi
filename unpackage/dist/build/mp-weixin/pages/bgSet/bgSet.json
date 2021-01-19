@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "点滴背景",
+  "usingComponents": {
+    "popup": "/components/Popup"
+  }
+}

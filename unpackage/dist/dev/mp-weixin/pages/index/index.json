@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "点滴",
+  "disableScroll": true,
+  "usingComponents": {
+    "my-diandi": "/components/MyDiandi",
+    "class-diandi": "/components/ClassDiandi",
+    "personal": "/components/Personal",
+    "set": "/components/Set",
+    "popup": "/components/Popup"
+  }
+}

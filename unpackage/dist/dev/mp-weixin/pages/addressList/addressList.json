@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "班级通讯录",
+  "usingComponents": {
+    "popup": "/components/Popup"
+  }
+}

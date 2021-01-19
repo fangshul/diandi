@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "添加点滴",
+  "usingComponents": {
+    "uni-calendar": "/components/uni-calendar/uni-calendar",
+    "popup": "/components/Popup"
+  }
+}

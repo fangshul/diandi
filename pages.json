@@ -1,0 +1,53 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			
+			"navigationBarTitleText": "点滴",
+			"disableScroll": true
+		}
+	},{
+		"path" : "pages/addDiandi/addDiandi",
+		"style" : {
+			"navigationBarTitleText": "添加点滴"
+		}
+    }
+	,{
+		"path" : "pages/detail/detail",
+		"style" : {
+			"navigationBarTitleText": "我"
+		}
+	}
+	,{
+		"path" : "pages/addressList/addressList",
+		"style" : {
+			"navigationBarTitleText": "班级通讯录"
+		}
+	}
+        ,{
+            "path" : "pages/guide/guide",
+            "style" : {
+				"navigationBarTitleText": "指引"
+			}
+        }
+        ,{
+            "path" : "pages/bgSet/bgSet",
+            "style" : {
+				"navigationBarTitleText": "点滴背景"
+			}
+        }
+        ,{
+            "path" : "pages/feedback/feedback",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "点滴",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#fff",
+		"disableScroll": true,
+		"enablePullDownRefresh": false
+		
+	}
+}
