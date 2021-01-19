@@ -389,7 +389,7 @@ var MyDiandi = function MyDiandi() {__webpack_require__.e(/*! require.ensure | c
                 if (res.data.code === 200) {
 
                   _public.default.note('登录成功', _this);
-                  uni.report('login', '登录成功');
+                  // uni.report('login','登录成功')
                   _this.iflogin = true;
                   _this.reallLogin = true;
 

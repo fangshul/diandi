@@ -689,7 +689,7 @@
 			console.log(res)
 			if (res.from === 'button') {
 			  // 来自页面内转发按钮
-			  uni.report('class_invivita','邀请加入班级')  
+			  // uni.report('class_invivita','邀请加入班级')  
 			  return {
 			       title: '快来加入我的班级吧',
 			       path: '/pages/index/index?share=true&code='+this.classCode + '&classId=' + this.classId

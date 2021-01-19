@@ -456,7 +456,7 @@ var uniCalendar = function uniCalendar() {Promise.all(/*! require.ensure | compo
                   wx.hideLoading();
                   if (res.data.code === 200) {
                     _public.default.note('提交成功，点滴正在审核中...', _this4);
-                    uni.report('per_essay', '发布个人点滴');
+                    // uni.report('per_essay','发布个人点滴')
 
                     setTimeout(function () {
                       uni.navigateBack();
@@ -506,7 +506,7 @@ var uniCalendar = function uniCalendar() {Promise.all(/*! require.ensure | compo
                 if (res.data.code === 200) {
                   _public.default.note('提交成功，点滴正在审核中...', _this4);
                   // gio('track', 'per_essay')
-                  uni.report('class_essay', '发布班级点滴');
+                  // uni.report('class_essay','发布班级点滴')
 
                   setTimeout(function () {
                     uni.navigateBack();

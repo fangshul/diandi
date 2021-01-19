@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
 
@@ -821,7 +821,7 @@ var popup = function popup() {__webpack_require__.e(/*! require.ensure | compone
     console.log(res);
     if (res.from === 'button') {
       // 来自页面内转发按钮
-      uni.report('class_invivita', '邀请加入班级');
+      // uni.report('class_invivita','邀请加入班级')  
       return {
         title: '快来加入我的班级吧',
         path: '/pages/index/index?share=true&code=' + this.classCode + '&classId=' + this.classId };
@@ -911,7 +911,6 @@ var popup = function popup() {__webpack_require__.e(/*! require.ensure | compone
       console.log('err', err);
     });
   } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

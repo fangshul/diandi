@@ -1,6 +1,6 @@
 {
-  "component": true,
   "usingComponents": {
     "popup": "/components/Popup"
-  }
+  },
+  "component": true
 }

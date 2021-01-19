@@ -251,7 +251,7 @@
 									if (res.data.code === 200) {
 										
 										publicFun.note('登录成功',_this)
-										uni.report('login','登录成功')
+										// uni.report('login','登录成功')
 										_this.iflogin = true
 										_this.reallLogin = true
 										

@@ -228,7 +228,7 @@
 						
 						if (res.data.code === 200) {
 							publicFun.note('加入班级成功',this,3000)
-							uni.report('join_class','加入班级')
+							// uni.report('join_class','加入班级')
 													
 							// 更新信息
 							self.getRequest('/user/profile',{
@@ -267,7 +267,7 @@
 							
 							if (res.data.code === 200) {
 								publicFun.note('加入班级成功',this)
-								uni.report('join_class','加入班级')
+								// uni.report('join_class','加入班级')
 							
 								// 更新信息
 								self.getRequest('/user/profile',{
@@ -315,7 +315,7 @@
 					} else if (res.data.code === 200) {
 					
 						publicFun.note('成功加入班级',this)
-						uni.report('join_class','加入班级')
+						// uni.report('join_class','加入班级')
 						// 更新信息
 						self.getRequest('/user/profile',{
 							

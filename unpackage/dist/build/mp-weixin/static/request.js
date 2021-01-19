@@ -1,7 +1,7 @@
 var base = 'https://wy.lujiahaoo.cn/dddx/api'
 
 function getRequest (url,data,success,fail,type,contentType) {
-	
+	console.log('type',type)
 	var token = wx.getStorageSync('token')
 
 	let contType
@@ -22,9 +22,15 @@ function getRequest (url,data,success,fail,type,contentType) {
 			'Authorization' : 'Bearer ' + token
 		},
 		success: res => {
+			if (res.data.code) {
+				console.log('success')
+			} else {
+				console.log(res.data.msg)
+			}
 			success(res)
 		},
 		fail: error => {
+			
 			fail(error)
 		}
 	})

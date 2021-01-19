@@ -114,7 +114,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
 
@@ -369,9 +369,9 @@ var _public = _interopRequireDefault(__webpack_require__(/*! @/static/public.js 
 var popup = function popup() {__webpack_require__.e(/*! require.ensure | components/Popup */ "components/Popup").then((function () {return resolve(__webpack_require__(/*! @/components/Popup.vue */ 100));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { popup: popup }, data: function data() {return { ifhot: true, ifJoin: false, ifcreate: false, title: '加入班级', link: '创建班级', init: true, customIndex: [0, 0, 0], //当前选中数组
       onlyArray: [[], [], []], customArray: '', classID: '', creatClassName: '', currectClass: false, classList: '', questionList: ['你们班的班歌是什么', '你们班有多少人脱单了', '你们班总共聚过多少次会', '你们班第一次班级聚会是在哪里举办的'], question: '', answer: '', ReqID: '', ifNote: false, noteData: '' };}, props: { classCode: String, classId: String, login: Boolean }, watch: { classCode: function classCode() {if (this.login) {this.inviJoin();}}, login: function login() {if (this.login) {this.inviJoin();}} }, mounted: function mounted() {if (wx.getStorageSync('bgColor') === 'code') {this.ifhot = false;} else {this.ifhot = true;}if (this.login) {this.inviJoin();} // 把学校信息赋值
     this.customArray = _school.default.data;var data = { customArray: this.customArray, customIndex: this.customIndex, onlyArray: this.onlyArray };for (var i = 0; i < data.customArray.length; i++) {data.onlyArray[0].push(data.customArray[i].value);}for (var j = 0; j < data.customArray[data.customIndex[0]].childs.length; j++) {data.onlyArray[1].push(data.customArray[data.customIndex[0]].childs[j].value);}for (var k = 0; k < data.customArray[data.customIndex[0]].childs[data.customIndex[1]].childs.length; k++) {data.onlyArray[2].push(data.customArray[data.customIndex[0]].childs[data.customIndex[1]].childs[k].value);}this.onlyArray = data.onlyArray;}, methods: { // 邀请码加入班级
-    inviJoin: function inviJoin() {var _this = this;if (this.classCode != '') {_request.default.getRequest('/class/user', { code: this.classCode, id: parseInt(this.classId) }, function (res) {if (res.data.code === 200) {_public.default.note('加入班级成功', _this, 3000);uni.report('join_class', '加入班级'); // 更新信息
-            _request.default.getRequest('/user/profile', {}, function (res) {if (res.data.code === 200) {getApp().globalData.personal = res.data.data;setTimeout(function () {_this.$emit('getclass', true);}, 800);}}, function (err) {console.log(err);}, 'GET');} else {_public.default.note(res.data.msg, _this, 3000);}}, function (err) {console.log(err);}, 'POST', 'application/json');}}, _join: function _join(index) {var _this2 = this;
-      if (!this.login) {
+    inviJoin: function inviJoin() {var _this = this;if (this.classCode != '') {_request.default.getRequest('/class/user', { code: this.classCode, id: parseInt(this.classId) }, function (res) {if (res.data.code === 200) {_public.default.note('加入班级成功', _this, 3000); // uni.report('join_class','加入班级')
+            // 更新信息
+            _request.default.getRequest('/user/profile', {}, function (res) {if (res.data.code === 200) {getApp().globalData.personal = res.data.data;setTimeout(function () {_this.$emit('getclass', true);}, 800);}}, function (err) {console.log(err);}, 'GET');} else {_public.default.note(res.data.msg, _this, 3000);}}, function (err) {console.log(err);}, 'POST', 'application/json');}}, _join: function _join(index) {var _this2 = this;if (!this.login) {
         this.$emit('toLogin', false);
       } else {
         this.ReqID = this.classList[index].id;
@@ -383,7 +383,7 @@ var popup = function popup() {__webpack_require__.e(/*! require.ensure | compone
 
             if (res.data.code === 200) {
               _public.default.note('加入班级成功', _this2);
-              uni.report('join_class', '加入班级');
+              // uni.report('join_class','加入班级')
 
               // 更新信息
               _request.default.getRequest('/user/profile', {},
@@ -431,7 +431,7 @@ var popup = function popup() {__webpack_require__.e(/*! require.ensure | compone
         } else if (res.data.code === 200) {
 
           _public.default.note('成功加入班级', _this3);
-          uni.report('join_class', '加入班级');
+          // uni.report('join_class','加入班级')
           // 更新信息
           _request.default.getRequest('/user/profile', {},
 
@@ -628,7 +628,6 @@ var popup = function popup() {__webpack_require__.e(/*! require.ensure | compone
         } });
 
     } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
